@@ -1,2 +1,2 @@
 # RockPaperScissor
-Rock Paper Scissor
+Baci Rock Paper Scissor in webbrowser console with Javascript
