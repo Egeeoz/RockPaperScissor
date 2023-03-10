@@ -13,6 +13,22 @@ let computerChoice = choices[Math.floor(Math.random() * 3)];
 console.log(`Computer chose ${computerChoice}`);
 
 //PLAYS SINGLE ROUND OF ROCK PAPER SCISSOR
-function rockPaperScissor(playerSelection, computerSelection) {
-    
+function playRound(playerSelection, computerSelection) {
+    if(playerSelection == 'rock' && computerSelection == 'paper'){
+        console.log(`Computer wins, paper beats rock!`); 
+    } else if(playerSelection == 'scissor' && computerSelection == 'paper') {
+        console.log(`You win, scissor beats paper!`);
+    } else if(playerSelection == 'rock' && computerSelection == 'scissor') {
+        console.log(`You win, rock beats scissor!`);
+    } else if(playerSelection == 'paper' && computerSelection == 'scissor'){
+        console.log(`Computer wins, scissor beats paper!`);
+    } else if(playerSelection == 'paper' && computerSelection == 'rock'){
+        console.log('You win, paper beats rock!')
+    } else if(playerSelection == 'scissor' && computerSelection == 'rock'){
+        console.log('Computer wins, rock beats scissor!');
+    } else {
+        console.log(`Tie!`)
+    }
 }
+
+playRound(userChoice,computerChoice);
